@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Online Savings Account Opening - Secure Digital Banking">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Bank - Account Opening</title>
+</head>
+<body>
+
+    <header>
+        <h1>Secure Bank</h1>
+        <p>Open Your Savings Account Online</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Account Opening Form</h2>
+
+            <form autocomplete="on">
+
+                <label>Full Name:</label><br>
+                <input type="text" name="fullname" placeholder="Enter full name" required>
+                <br><br>
+
+                <label>Email:</label><br>
+                <input type="email" name="email" placeholder="Enter email address" required>
+                <br><br>
+
+                <label>Phone Number:</label><br>
+                <input type="tel" name="phone" pattern="[0-9]{10}" maxlength="10"
+                       placeholder="Enter 10-digit mobile number" required>
+                <br><br>
+
+                <label>PAN Number:</label><br>
+                <input type="text" name="pan"
+                       pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}"
+                       placeholder="ABCDE1234F" required>
+                <br><br>
+
+                <label>IFSC Code:</label><br>
+                <input type="text" name="ifsc"
+                       pattern="[A-Z]{4}[0-9]{7}"
+                       placeholder="ABCD1234567" required>
+                <br><br>
+
+                <label>Account Type:</label><br>
+                <input type="text" list="accounttypes" placeholder="Select account type" required>
+                <datalist id="accounttypes">
+                    <option value="Savings Account">
+                    <option value="Current Account">
+                    <option value="Salary Account">
+                    <option value="Fixed Deposit Account">
+                </datalist>
+                <br><br>
+
+                <label>Date of Birth:</label><br>
+                <input type="date" name="dob" max="2008-12-31" required>
+                <br><br>
+
+                <label>Monthly Income (₹):</label><br>
+                <input type="number" name="income" min="0" step="1000"
+                       placeholder="Enter monthly income" required>
+                <br><br>
+
+                <label>Upload ID Proof:</label><br>
+                <input type="file" name="idproof" required>
+                <br><br>
+
+                <input type="submit" value="Submit Application">
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Secure Bank Ltd, Hyderabad, India</p>
+        <p>Contact: support@securebank.com | +91-9876543210</p>
+        <p>&copy; 2026 Secure Bank. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

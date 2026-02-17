@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="E-Learning Certification Course Registration Portal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Course Registration Portal</title>
+</head>
+<body>
+
+    <header>
+        <h1>NextGen Learning Platform</h1>
+        <p>Professional Certification Programs</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Introduction Video</h2>
+            <video controls width="640" height="360" poster="course-poster.jpg">
+                <source src="mov_bbb.mp4" type="video/mp4">
+                <source src="intro.webm" type="video/webm">
+                <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English" default>
+                Your browser does not support the video element.
+            </video>
+        </section>
+
+        <section>
+            <h2>Course Registration Form</h2>
+
+            <form autocomplete="on">
+
+                <label>Full Name:</label><br>
+                <input type="text" name="fullname" placeholder="Enter your full name" required>
+                <br><br>
+
+                <label>Email:</label><br>
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <br><br>
+
+                <label>Select Course:</label><br>
+                <input type="text" list="courses" placeholder="Type or select course" required>
+                <datalist id="courses">
+                    <option value="Full Stack Web Development">
+                    <option value="Data Science with Python">
+                    <option value="Java Backend Development">
+                    <option value="Cloud Computing Certification">
+                    <option value="Cybersecurity Fundamentals">
+                    <option value="AI & Machine Learning">
+                </datalist>
+                <br><br>
+
+                <label>Select Batch Month:</label><br>
+                <input type="month" name="batch" required>
+                <br><br>
+
+                <label>Preferred Session Timing:</label><br>
+                <input type="time" name="sessiontime" required>
+                <br><br>
+
+                <label>Skill Level (1–10):</label><br>
+                <input type="range" name="skill" min="1" max="10" value="5">
+                <br><br>
+
+                <label>Enrollment Progress:</label><br>
+                <progress value="70" max="100"></progress>
+                <br><br>
+
+                <input type="submit" value="Enroll Now">
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Contact: support@nextgenlearning.com | +91-9876543210</p>
+        <p>&copy; 2026 NextGen Learning Platform. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
