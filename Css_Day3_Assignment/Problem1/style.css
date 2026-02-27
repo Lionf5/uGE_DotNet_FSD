@@ -1,0 +1,91 @@
+/* Group selector */
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+    color: #024873;
+}
+
+/* Element selectors */
+p {
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #e6f3ff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #024873;
+    font-weight: bold;
+}
+
+/* Banner */
+.banner {
+    background: #cfe8ff;
+    padding: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.service-card {
+    width: 250px;
+    background: #ffffff;
+    border: 2px solid #024873;
+    border-radius: 10px;
+    padding: 20px;   /* Box model */
+    margin: 15px;
+    box-sizing: border-box;
+}
+
+.services p {      /* Descendant selector */
+    font-size: 14px;
+}
+
+/* Doctor Profile (highlight done using internal CSS in HTML) */
+
+/* Contact Section */
+#contact {
+    padding: 30px;
+    background: #f0f8ff;
+}
+
+input[type="text"] {   /* Attribute selector */
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    background: #024873;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {    /* Pseudo-class */
+    background: #0369a1;
+}
+
+/* Footer */
+footer {
+    background: #024873;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}

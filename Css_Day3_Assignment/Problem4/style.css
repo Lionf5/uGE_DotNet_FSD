@@ -1,0 +1,49 @@
+/* Layout */
+.sidebar {
+    width: 220px;
+    background: #002244;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+}
+
+header {
+    background: #004488;
+    color: white;
+    padding: 20px;
+}
+
+/* Cards */
+.card {
+    width: 250px;
+    padding: 20px;
+    margin: 15px;
+    border: 2px solid #004488;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.card.debit {
+    background: #ffe6e6;
+}
+
+.card.credit {
+    background: #e6ffe6;
+}
+
+/* Transaction Table */
+table tr:hover {    /* Pseudo-class */
+    background: #e8f4ff;
+}
+
+button:active {     /* Pseudo-class */
+    transform: scale(0.95);
+}
+
+/* Attribute selector */
+input[type="password"] {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #004488;
+    margin: 10px 0;
+}

@@ -1,0 +1,84 @@
+/* Universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background: #003366;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav li:first-child {   /* Pseudo-class */
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {              /* Pseudo-class */
+    color: yellow;
+}
+
+/* Hero Section */
+#hero {
+    padding: 50px;
+    background: #e6f1ff;
+    text-align: center;
+}
+
+/* Course grid */
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+}
+
+.course {
+    width: 270px;
+    border: 2px solid #003366;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background: white;
+}
+
+.course:hover {
+    background: #dceeff;
+}
+
+/* Child selector */
+.course > h3 {
+    color: #003366;
+}
+
+/* Adjacent sibling selector */
+h3 + p {
+    font-size: 14px;
+    color: #444;
+}
+
+/* Bonus: first & last background*/
+.course:first-child {
+    background: #fff7cc;
+}
+
+.course:last-child {
+    background: #e6ffe6;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
